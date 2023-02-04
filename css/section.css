@@ -1,0 +1,49 @@
+.section {
+    max-width: 1000px;
+    min-height: 30px;
+    background-color: #a5a3a7;
+    border: 6px;
+    border-style: inset;
+    border-color: #db143c;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 10%;
+    box-shadow: 15px 11px 58px -4px rgb(120 121 119 / 75%);
+}
+
+.section--aboutMe {
+    max-width: 500px;
+}
+
+.section__header {
+    text-shadow: 2px 2px 8px #ee7575;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.section__sidebar {
+    float: right;
+}
+
+.section__listItem {
+    list-style: none;
+    margin-inline-end: 20px;
+
+}
+
+.section__footer {
+    min-width: 300px;
+    line-height: 0.9;
+    margin: auto;
+    background-color: #c1c0c2;
+    padding: 2px 15px;
+    border-radius: 15px;
+}
+
+.section__button {
+    width: 90px;
+}
+
+.section__hidden {
+    display: none;
+}

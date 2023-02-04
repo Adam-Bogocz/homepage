@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam.Bogocz.frontenddeveloper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/body.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body">
+    <header>
+        <h1 class="body__header">Homepage Adam Bogocz - frontenddeveloper</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="body__listItem"><a href="#AboutMe">O mnie </a></li>
+            <li class="body__listItem"><a href="#Arduino">Arduino</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section section--aboutMe">
+            <aside class="section__sidebar">
+                <img width="100" src="https://i.postimg.cc/QC8LhQnF/Adi.png" alt="Adam Bogocz">
+            </aside>
+            <h2 class="section__header" id="AboutMe"> CURRICULUM VITAE </h2>
+            <p> Imię i Nazwisko: <strong> Adam Bogocz</strong> <br> Telefon kontaktowy: 661 583 033 <br> E-mail:
+                adi_bog@o2.pl
+            </p>
+            <footer>
+                <button class="section__button js-section__buttonEducation"><span
+                        class="js-section__buttonEducationName">Education</span></button>
+                <button class="section__button js-section__buttonCourses"><span
+                        class="js-section__buttonCoursesName">Courses</span></button>
+                <button class="section__button js-section__buttonSkils"><span
+                        class="js-section__buttonSkilsName">Skils</span></button>
+                <button class="section__button js-section__buttonInterested"><span
+                        class="js-section__buttonInterestedName">Interested</span></button>
+            </footer>
+            <article class="section__education section__hidden">
+                <h2>Wykształcenie</h2>
+                <h3>1998 - 2003 </h3>
+                <p>Studia wyższe inżynierskie, Akademii Techniczno - Humanistycznej w Bielsku - Białej,</p>
+                <p>Kierunek: Mechanika i Budowa Maszyn o specjalności Techniczno Informatycznej</p>
+                <h3>1993 - 1998</h3>
+                <p>Technikum Mechaniczno- Elektryczne Zespołu Szkól Mechaniczno Elektrycznych w Cieszynie,</p>
+                <p>Technik elektronik o specjalności elektryczna i elektroniczna automatyka przemysłowa.</p>
+            </article>
+            <article class="section__courses section__hidden">
+                <h2>Kursy, Szkolenia</h2>
+                <p>Współrzędnościowa technika pomiarowa</p>
+                <p>Mechanical Desktop 6 / Auto Cad</p>
+                <p>Uprawnienia elektryczne eksploatacyjne SEP do 1 kV,</p>
+                <p>Szkolenie z zakresu montażu i programowania systemów alarmowych</p>
+                <p>Szkolenie YouCode Frontend Developer od podstaw (w trakcie) </p>
+            </article>
+            <article class="section__skils section__hidden">
+                <h2>Umiejętności:</h2>
+                <p>Bardzo dobra znajomość obsługi komputera, środowiska Windows, Pakiet Microsoft Office, Mechanical
+                    Desktop, Auto-Cad, Corel</p>
+                <p>Szybkie przyswajanie nowych programów komputerowych</p>
+            </article>
+            <article class="section__interested section__hidden">
+                <h2> Zainteresowania:</h2>
+                <p>Komputery</p>
+                <p>Sport</p>
+                <p>Elektronika, Elektryka, Systemy Alarmowe</p>
+                <p>Programowanie mikrokontrolerów - <span><i>Arduino</i></span> </p>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section__header" id="Arduino">ARDUINO</h2>
+            <nav>
+                <ul>
+                    <li class="section__listItem"><a href="#Wstęp">Wstęp </a></li>
+                    <li class="section__listItem"><a href="#CzymJestArduino">Czym jest Arduino</a></li>
+                    <li class="section__listItem"><a href="#RodzinaPłytArduino">Rodziny płyt Arduino</a></li>
+                    <li class="section__listItem"><a href="#TypyDanychWJęzykuC">Typy danych w języku C</a></li>
+                </ul>
+            </nav>
+            <h3 class="section__header" id="Wstęp"> Wstęp </h3>
+            <p>
+                Interfejs Aruino jest tanią i łatwą w użyciu technologią pozwalającą na tworzenie projektów opartych
+                na
+                mikrokontrolerach. Wykorzystując podstawy elektroniki, możesz sprawić, że Twoje Arduino będzie
+                sterowało
+                oświetleniem podczas wystawy sztuki lub zarządzało energią wytwarzaną przez panele słoneczne.
+                Programowanie Arduino odbywa się w języku C-języka, z którego korzysta mikrokontroler.
+            </p>
+            <h3 class="section__header" id="CzymJestArduino">Czym jest Arduino?</h3>
+            <p>
+                Arduino jest mikrokontrolerem mającym postać płytki wyposażonej w złącze uniwersalnej magistrali
+                szeregowej (USB) służące do komunikacji z komputerem, a także inne złącza służące do podłączania
+                zewnętrznych elementów elektronicznych, takich jak silniki, przekaźniki, fotodiody, diody laserowe,
+                głośniki, mikrofony itp. <br>
+                Urządzenia podłączone do Arduino mogą być zasilane prądem pobieranym ze złącza USB, ogniwa 9 V lub
+                zewnętrznego zasilacza. Urządzenia te mogą być sterowane za pośrednictwem komputera lub po uprzednim
+                zaprogramowaniu i odłączeniu od komputera - przez samo Arduino.
+            </p>
+            <h3 class="section__header" id="RodzinaPłytArduino">Rodzina płyt Arduino</h3>
+            <p>
+                Projekt Arduino jest otwarty. Każdy może wykonywać układy zgodne z Arduino. Dzięki temu na rynku
+                pojawiło się wiele tańszych opowiedników oryginalnych płytek Arduino.
+            </p>
+            <ul>
+                <li class="listItem">Uno, Duemilanove i Diecimila</li>
+                <li class="listItem">Mega i Due</li>
+                <li class="listItem">Micro i Small</li>
+                <li class="listItem">Yun</li>
+                <li class="listItem">Lilypad</li>
+                <li class="listItem">Inne "oficjalne" płytki</li>
+                <li class="listItem">Inne klony i odmiany Arduino
+                    <ul>
+                        <li class="listItem">Sparkfun RedBoard</li>
+                        <li class="listItem">Adafruit Metro</li>
+                        <li class="listItem">Olimexino</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 class="section__header" id="TypyDanychWJęzykuC">Typy danych w języku C</h3>
+            <p>
+                W poniżsej tabeli pokażę przykładowe typy danych używane w języku C. Być może podobne typy będą używane
+                <em>java script</em>, ale o tym dowiem się pewnie dopiero na dalszym etapie szkolenia
+            </p>
+            <div class="container">
+                <table class="table">
+                    <caption class="table__caption"> Typy danych w języku C</caption>
+                    <thead>
+                        <tr class="table__tableRow">
+                            <th class="table__tableCell table__tableHeader" scope="col">Typ</th>
+                            <th class="table__tableCell table__tableHeader">Zajmowany obszar pamięci (w bajtach)</th>
+                            <th class="table__tableCell table__tableHeader">Przedział</th>
+                            <th class="table__tableCell table__tableHeader">Uwagi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table__tableRow">
+                            <th class="table__tableCell table__tableHeader" scope="row">boolean</th>
+                            <td class="table__tableCell">1</td>
+                            <td class="table__tableCell" colspan="2">prawda lub fałsz (0 lub 1)</td>
+                        </tr>
+                        <tr class="table__tableRow">
+                            <th class="table__tableCell table__tableHeader">char</th>
+                            <td class="table__tableCell">1</td>
+                            <td class="table__tableCell">-128 do + 128</td>
+                            <td class="table__tableCell">Używany do zapisu znaków kodu ASCII</td>
+                        </tr>
+                        <tr class="table__tableRow">
+                            <th class="table__tableCell table__tableHeader" scope="row">byte</th>
+                            <td class="table__tableCell">1</td>
+                            <td class="table__tableCell">0 do 255</td>
+                            <td class="table__tableCell">Stosowany często jako pojedyncza jednostka danych podczas
+                                komunikacji za pośrednictwem portu szeregowego.</td>
+                        </tr>
+                        <tr class="table__tableRow">
+                            <th class="table__tableCell table__tableHeader" scope="row">int</th>
+                            <td class="table__tableCell">2</td>
+                            <td class="table__tableCell" colspan="2">-32 768 do 32 767</td>
+                        </tr>
+                        <tr class="table__tableRow">
+                            <th class="table__tableCell table__tableHeader" scope="row">unsigned int</th>
+                            <td class="table__tableCell">2</td>
+                            <td class="table__tableCell">0 do 65 536</td>
+                            <td class="table__tableCell">Stosowany do zwiększenia zakresu opisywanych liczb tam, gdzie
+                                niepotrzeby jest zapis liczb ujemnych</td>
+                        </tr>
+                        <tr class="table__tableRow">
+                            <th class="table__tableCell table__tableHeader" scope="row">long</th>
+                            <td class="table__tableCell">4</td>
+                            <td class="table__tableCell">-2 147 483 648 do +2 147 483 647</td>
+                            <td class="table__tableCell">Potrzebny tylko do zapisu bardzo dużych wartości</td>
+                        </tr>
+                        <tr class="table__tableRow">
+                            <th class="table__tableCell table__tableHeader" scope="row">unsigned long</th>
+                            <td class="table__tableCell">4</td>
+                            <td class="table__tableCell">0 do 4 294 967 295</td>
+                            <td class="table__tableCell">Patrz <em>unsigned int</em></td>
+                        </tr>
+                        <tr class="table__tableRow">
+                            <th class="table__tableCell table__tableHeader" scope="row">float</th>
+                            <td class="table__tableCell">4</td>
+                            <td class="table__tableCell" rowspan="2">-3,4028235E+38 do +3,4028235E+38</td>
+                            <td class="table__tableCell" rowspan="2"><em>double</em> normalnie byłby ośmiobitowy i
+                                miałby
+                                większąprecyzję od typu <em>float</em>. W
+                                przypadku Arduino zakresy tych dwóch typów danych są jednakże identyczne</td>
+                        </tr>
+                        <tr class="table__tableRow">
+                            <th class="table__tableCell table__tableHeader" scope="row">double</th>
+                            <td class="table__tableCell">4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <footer class="section__footer">
+                <p>References: Simon Monk: Arduino dla początkujących. Podstawy i szkice.</p>
+            </footer>
+        </section>
+    </main>
+</body>
+
+</html>
