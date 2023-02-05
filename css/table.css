@@ -11,21 +11,24 @@
     padding: 10px;
 }
 
-.table__tableCell {
+.table__cel {
     border: 2px solid #a5a3a7;
     padding: 10px;
     text-align: center;
 }
 
-.table__tableHeader {
+.table__header {
     background-color: #d6d4d8;
 }
 
-.table__tableRow:nth-child(even) {
+.table__row:nth-child(even) {
     background-color: #c4c2c2;
 }
 
-.table__tableRow:hover {
+.table__row:hover {
     background-color: #fac9c9;
 }
 
+.table_container {
+    overflow-x: auto;
+}

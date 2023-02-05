@@ -7,7 +7,7 @@
     border-color: #db143c;
     padding: 20px;
     border-radius: 25px;
-    margin: 10%;
+    margin-top: 10%;
     box-shadow: 15px 11px 58px -4px rgb(120 121 119 / 75%);
 }
 
@@ -25,16 +25,10 @@
     float: right;
 }
 
-.section__listItem {
-    list-style: none;
-    margin-inline-end: 20px;
-
-}
-
 .section__footer {
-    min-width: 300px;
     line-height: 0.9;
     margin: auto;
+    margin-top:20px;
     background-color: #c1c0c2;
     padding: 2px 15px;
     border-radius: 15px;
@@ -44,6 +38,6 @@
     width: 90px;
 }
 
-.section__hidden {
+.article--hidden {
     display: none;
 }
