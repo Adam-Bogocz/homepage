@@ -1,58 +1,61 @@
-console.log("Cześć!");
+const welcome = () => {
+    console.log("Cześć!");
+}
 
-let educationButtonElement = document.querySelector(".js-educationButton");
-let educationButtonName = document.querySelector(".js-educationButtonName");
-let coursesButtonElement = document.querySelector(".js-coursesButton");
-let coursesButtonName = document.querySelector(".js-coursesButtonName")
-let skilsButtonElement = document.querySelector(".js-skilsButton");
-let skilsButtonName = document.querySelector(".js-skilsButtonName");
-let interestedButtonElement = document.querySelector(".js-interestedButton");
-let interestedButtonName = document.querySelector(".js-interestedButtonName");
-let education = document.querySelector(".article--education");
-let courses = document.querySelector(".article--courses");
-let skils = document.querySelector(".article--skils");
-let interested = document.querySelector(".article--interested");
+welcome();
 
-educationButtonElement.addEventListener("click", () => {
-    education.classList.toggle("article--hidden");
-    courses.classList.add("article--hidden");
-    skils.classList.add("article--hidden");
-    interested.classList.add("article--hidden");
-    educationButtonName.innerText = education.classList.contains("article--hidden") ? "Education" : "Ukryj";
-    coursesButtonName.innerText = courses.classList.contains("article--hidden") ? "Courses" : "Ukryj";
-    skilsButtonName.innerText = skils.classList.contains("article--hidden") ? "Skils" : "Ukryj";
-    interestedButtonName.innerText = interested.classList.contains("article--hidden") ? "Interested" : "Ukryj";
-});
+{
+    const educationButtonElement = document.querySelector(".js-educationButton");
+    const coursesButtonElement = document.querySelector(".js-coursesButton");
+    const skilsButtonElement = document.querySelector(".js-skilsButton");
+    const interestedButtonElement = document.querySelector(".js-interestedButton");
+    const education = document.querySelector(".article--education");
+    const courses = document.querySelector(".article--courses");
+    const skils = document.querySelector(".article--skils");
+    const interested = document.querySelector(".article--interested");
 
-coursesButtonElement.addEventListener("click", () => {
-    education.classList.add("article--hidden");
-    courses.classList.toggle("article--hidden");
-    skils.classList.add("article--hidden");
-    interested.classList.add("article--hidden");
-    educationButtonName.innerText = education.classList.contains("article--hidden") ? "Education" : "Ukryj";
-    coursesButtonName.innerText = courses.classList.contains("article--hidden") ? "Courses" : "Ukryj";
-    skilsButtonName.innerText = skils.classList.contains("article--hidden") ? "Skils" : "Ukryj";
-    interestedButtonName.innerText = interested.classList.contains("article--hidden") ? "Interested" : "Ukryj";
-});
 
-skilsButtonElement.addEventListener("click", () => {
-    education.classList.add("article--hidden");
-    courses.classList.add("article--hidden");
-    skils.classList.toggle("article--hidden");
-    interested.classList.add("article--hidden");
-    educationButtonName.innerText = education.classList.contains("article--hidden") ? "Education" : "Ukryj";
-    coursesButtonName.innerText = courses.classList.contains("article--hidden") ? "Courses" : "Ukryj";
-    skilsButtonName.innerText = skils.classList.contains("article--hidden") ? "Skils" : "Ukryj";
-    interestedButtonName.innerText = interested.classList.contains("article--hidden") ? "Interested" : "Ukryj";
-});
+    function toggleArticleHidden(buttonName) {
+        buttonName.classList.toggle("article--hidden");
+    }
 
-interestedButtonElement.addEventListener("click", () => {
-    education.classList.add("article--hidden");
-    courses.classList.add("article--hidden");
-    skils.classList.add("article--hidden");
-    interested.classList.toggle("article--hidden");
-    educationButtonName.innerText = education.classList.contains("article--hidden") ? "Education" : "Ukryj";
-    coursesButtonName.innerText = courses.classList.contains("article--hidden") ? "Courses" : "Ukryj";
-    skilsButtonName.innerText = skils.classList.contains("article--hidden") ? "Skils" : "Ukryj";
-    interestedButtonName.innerText = interested.classList.contains("article--hidden") ? "Interested" : "Ukryj";
-});    
+    function addArticleHidden(buttonName) {
+        buttonName.classList.add("article--hidden");
+    }
+
+    function changeButtonName() {
+        const educationButtonName = document.querySelector(".js-educationButtonName");
+        const coursesButtonName = document.querySelector(".js-coursesButtonName")
+        const skilsButtonName = document.querySelector(".js-skilsButtonName");
+        const interestedButtonName = document.querySelector(".js-interestedButtonName");
+        educationButtonName.innerText = education.classList.contains("article--hidden") ? "Education" : "Ukryj";
+        coursesButtonName.innerText = courses.classList.contains("article--hidden") ? "Courses" : "Ukryj";
+        skilsButtonName.innerText = skils.classList.contains("article--hidden") ? "Skils" : "Ukryj";
+        interestedButtonName.innerText = interested.classList.contains("article--hidden") ? "Interested" : "Ukryj";
+    }
+
+    function clickButton(buttonName) {
+        // toggleArticleHidden(buttonName);
+        buttonName === education ? toggleArticleHidden(buttonName) : addArticleHidden(education);
+        buttonName === courses ? toggleArticleHidden(buttonName) : addArticleHidden(courses);
+        buttonName === skils ? toggleArticleHidden(buttonName) : addArticleHidden(skils);
+        buttonName === interested ? toggleArticleHidden(buttonName) : addArticleHidden(interested);
+        changeButtonName();
+    };
+
+    educationButtonElement.addEventListener("click", () => {
+        clickButton(education);
+    });
+
+    coursesButtonElement.addEventListener("click", () => {
+        clickButton(courses);
+    });
+
+    skilsButtonElement.addEventListener("click", () => {
+        clickButton(skils);
+    });
+
+    interestedButtonElement.addEventListener("click", () => {
+        clickButton(interested);
+    });
+}
